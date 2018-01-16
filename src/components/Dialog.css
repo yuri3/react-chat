@@ -1,0 +1,126 @@
+#dialog {
+  position: relative;
+}
+
+#overlay {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+#body {
+  overflow-y: auto;
+  height: 500px;
+}
+
+#loading {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.msg-date {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 200;
+}
+
+.msg-date div {
+  border: 1px solid #c2c2c2;
+  border-radius: 13px;
+  padding: 3px 5px;
+  background-color: #c2c2c2;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.user,
+.me {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+.me {
+  padding-right: 15px;
+  justify-content: flex-end;
+}
+
+.user-msg,
+.me-msg {
+  position: relative;
+  padding: 5px;
+  width: 300px;
+  word-wrap: break-word;
+  border-radius: 12px;
+  margin: 0 0 0 15px;
+  background-color: #e0e0e0;
+}
+
+.me-msg {
+  border-radius: 12px;
+  margin: 0 15px 0 0;
+  background-color: #a9ff6e;
+}
+
+.user-msg::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: 10px solid transparent;
+  left: -20px;
+  border-right: 10px solid #e0e0e0;
+}
+
+.me-msg::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: 10px solid transparent;
+  right: -20px;
+  border-left: 10px solid #a9ff6e;
+}
+
+.user-time,
+.me-time {
+  display: block;
+  text-align: right;
+  color: #757575;
+}
+
+.me-time {
+  color: #388e3c;
+}
+
+.user-options {
+  margin: 0 0 0 15px;
+  visibility: hidden;
+}
+
+.me-options {
+  margin: 0 5px 0 0;
+  visibility: hidden;
+}
+
+.user:hover .user-options {
+  visibility: visible;
+}
+
+.me:hover .me-options {
+  visibility: visible;
+}

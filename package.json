@@ -1,0 +1,51 @@
+{
+  "name": "react-chat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test:lint:js": "eslint --ext=js --ext=jsx .",
+    "test:lint:css": "stylelint \"**/*.css\"",
+    "test:unit": "react-scripts test --env=jsdom",
+    "test": "run-s test:**",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "dotenv": "^4.0.0",
+    "history": "^4.7.2",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.4",
+    "material-ui": "^0.19.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-cookie": "^2.1.1",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.0.14",
+    "react-tap-event-plugin": "^3.0.2",
+    "reduce-reducers": "^0.1.2",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-form": "^7.1.1",
+    "redux-form-material-ui": "^4.3.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.15.6",
+    "redux-socket.io": "^1.4.0",
+    "redux-thunk": "^2.2.0",
+    "socket.io-client": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "npm-run-all": "^4.1.1",
+    "stylelint": "^8.2.0",
+    "stylelint-config-standard": "^17.0.0"
+  }
+}

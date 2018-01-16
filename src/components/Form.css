@@ -1,0 +1,40 @@
+#error-msg {
+  padding: 0 20px;
+  color: #d50000;
+}
+
+#error-msg h3 {
+  text-align: center;
+}
+
+#error-msg h3:first-child {
+  margin-bottom: 0;
+}
+
+#error-msg h3:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#circular-progress {
+  position: absolute;
+  z-index: 300;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  padding: 20px;
+}
+
+#radio-group,
+#checkbox {
+  padding-top: 20px;
+}
+
+#buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}

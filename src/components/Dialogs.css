@@ -1,0 +1,35 @@
+#dialogs {
+  border: 1px solid #bdbdbd;
+  display: flex;
+  height: 100%;
+}
+
+#list {
+  position: relative;
+  border-right: 1px solid #bdbdbd;
+  min-width: 300px;
+}
+
+.user-status {
+  background-color: #fff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+}
+
+.inner-circle {
+  border: 1px solid transparent;
+  background-color: #bdbdbd;
+  margin: 2px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+#messages {
+  position: relative;
+  width: 100%;
+}

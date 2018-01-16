@@ -1,0 +1,10 @@
+header {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header h3 {
+  border: 1px solid red;
+  padding: 5px;
+}
